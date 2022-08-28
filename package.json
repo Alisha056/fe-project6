@@ -2,7 +2,7 @@
   "name": "fe-project6",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://alisha056.github.io",
+  "homepage": "https://alisha056.github.io/fe-project6",
   "dependencies": {
     "-": "^0.0.1",
     "@testing-library/jest-dom": "^5.16.5",

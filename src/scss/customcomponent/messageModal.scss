@@ -1,0 +1,47 @@
+@import "../index.scss";
+.MessageModal {
+   .modal-content {
+      background: #ffffff;
+      border: 1px solid #d0d7e2;
+      box-sizing: border-box;
+      max-width: 422px;
+      border-radius: 6px;
+      padding: 10px 10px;
+   }
+}
+.message_modal_wrapper {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+
+   .message_title {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 28px;
+      color: #374253;
+   }
+   .message_text {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: #596579;
+      text-align: center;
+   }
+   .message_button {
+      padding: 12px 30px;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 17px;
+      line-height: 20px;
+      color: #ffffff;
+      background: $primaryColor;
+      border-radius: 12px;
+      border: none;
+      &:hover {
+         background-color: $secondaryColor;
+      }
+   }
+}

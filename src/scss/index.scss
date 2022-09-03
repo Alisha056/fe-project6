@@ -1,0 +1,71 @@
+// font-family: 'Dancing Script', cursive;
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@400;500;600;700;800&display=swap");
+//Variables
+$primaryColor: #4f0d75;
+$secondaryColor: #bd88db;
+$black: #000;
+$white: #fff;
+
+//global style
+
+#root {
+   //    background-color: #fce5de;
+   &::before {
+      content: " ";
+      display: block;
+      position: absolute;
+      z-index: -1;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0.1;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background: url("../assets/background.jpg");
+   }
+}
+p {
+   margin: 0;
+}
+a {
+   text-decoration: none;
+}
+
+//Helper Class
+.fixed-width {
+   width: 80%;
+}
+.logo {
+   font-weight: 1000;
+   font-family: "Satisfy", cursive;
+   text-decoration: none;
+   font-style: italic;
+   color: $primaryColor;
+   background: -webkit-linear-gradient($primaryColor, $secondaryColor);
+   background-clip: text;
+   -webkit-text-fill-color: transparent;
+   &:hover {
+      cursor: pointer;
+   }
+}
+.font-small {
+   font-size: 22px;
+   line-height: 26px;
+}
+.linkText {
+   color: $primaryColor;
+   &:hover {
+      cursor: pointer;
+      color: $secondaryColor;
+   }
+}
+.btn_normal {
+   background-color: $primaryColor !important;
+}
+.btn_processing {
+   background-color: $secondaryColor !important;
+}

@@ -1,0 +1,56 @@
+@import "../index.scss";
+.navbar {
+   display: flex;
+   justify-content: center;
+   .navBar__container {
+      width: 80%;
+      display: flex;
+      align-items: center;
+      .navBar__brand {
+         font-weight: 1000;
+         font-family: "Satisfy", cursive;
+         text-decoration: none;
+         font-size: 32px;
+         font-style: italic;
+         line-height: 44px;
+         color: $primaryColor;
+         background: -webkit-linear-gradient($primaryColor, $secondaryColor);
+         background-clip: text;
+         -webkit-text-fill-color: transparent;
+         &:hover {
+            cursor: pointer;
+         }
+      }
+      .nav__links {
+         display: flex;
+         gap: 10px;
+         margin-left: 34px;
+         .navBar_singleLink {
+            width: 135px;
+            .iconLink {
+               color: $primaryColor;
+               height: 50px;
+               display: flex;
+               flex-direction: column;
+               align-items: center;
+               justify-content: center;
+               .text {
+                  display: none;
+                  color: $primaryColor;
+               }
+               &:hover {
+                  cursor: pointer;
+                  .text {
+                     display: block;
+                  }
+               }
+            }
+         }
+      }
+      .nav__icons {
+         .navBar_iconLink {
+            color: $primaryColor;
+         }
+      }
+   }
+}

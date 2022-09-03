@@ -4,6 +4,7 @@ import App from "../App";
 import ErrorPage from "../components/customcomponent/error";
 import Doctors from "../components/pages/doctors";
 import Login from "../components/pages/login";
+import MentalHealth from "../components/pages/mentalHealth";
 import Register from "../components/pages/register";
 import Stories from "../components/pages/stories";
 import { RouteWithoutLogin } from "./protected.routes";
@@ -18,6 +19,7 @@ const RoutePath = () => {
             <Route exact path="/register" element={<RouteWithoutLogin element={<Register />} />} />
             <Route exact path="/doctors" element={<Doctors />} />
             <Route exact path="/stories" element={<Stories />} />
+            <Route exact path="/mentalHealth" element={<MentalHealth />} />
          </Routes>
       </Router>
    );

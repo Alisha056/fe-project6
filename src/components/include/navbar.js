@@ -18,7 +18,7 @@ const CustomNav = () => {
             </Navbar.Brand>
             <Navbar.Collapse id="basic-navbar-nav">
                <Nav className="nav__links">
-                  <Nav.Link href="/" className="navBar_singleLink">
+                  <Nav.Link href="/mentalHealth" className="navBar_singleLink">
                      <div className="iconLink">
                         <RiMentalHealthFill size={18} />
                         <p className="text">Mental Health</p>
@@ -52,8 +52,9 @@ const CustomNav = () => {
                      href={User ? "" : "/login"}
                      onClick={() => {
                         if (User) {
-                           let confirm = window.confirm("Do you want to logouy ?");
+                           let confirm = window.confirm("Do you want to logout?");
                            confirm ? clearToken() : console.log("");
+                           confirm ? window.location.reload() : console.log("");
                         }
                      }}
                      className="navBar_iconLink"
